@@ -5,4 +5,18 @@ desenvolvimento de um clone do instagram:
     implementação do mecanismo de interação entre usuarios
     comentarios e upload de fotos
 
+    finalizar:
+    Flash menssagem
+    Autenticação do Devise
+    Pag dos post
+    Associação de usuarios
+    Área de sugestões
+    Modal do usuario
+    Atualização de perfil
+    Confirmação via emails
+    Active Storage
+    Active Cable
+    Sincronização
+
+
 mentores: Lucas e Mauricio.
