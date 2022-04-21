@@ -3,3 +3,5 @@ import "@hotwired/turbo-rails"
 import "controllers"
 
 import "../src/application.css";
+
+import "./flashMessages.js";
