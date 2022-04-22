@@ -1,10 +1,26 @@
-<p style="color: green"><%= notice %></p>
+<main class="posts-page has-comments container">
+  <section class="posts">
+    <%= render @post %>
+  </section>
 
-<%= render @post %>
+  <aside>
+    <section class="comments" data-post-id="<%= @post.id %>">
+      <% if @post.comments.any? %>
+        <%= render @post.comments %>
+      <% else %>
+        Nenhum comentário ainda.
+      <% end %>
+      <%= form_with model: @comment, local: true, class: "new-comment" do |form| %>
+        <%= form.hidden_field :post_id, value: @post.id %>
 
-<div>
-  <%= link_to "Edit this post", edit_post_path(@post) %> |
-  <%= link_to "Back to posts", posts_path %>
+        <div class="field">
+          <%= form.rich_text_area :body, placeholder: "Comentário", required: true %>
+        </div>
 
-  <%= button_to "Destroy this post", @post, method: :delete %>
-</div>
+        <div class="actions">
+          <%= form.submit "Enviar comentário" %>
+        </div>
+      <% end %>
+    </section>
+  </aside>
+</main>
