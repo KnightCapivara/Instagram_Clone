@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
     validates :description, presence: true
 
-    belongs_to :created_by, class_name: "User"
+    belongs_to :created_by, class_name: "User" 
 
     has_many :likes, dependent: :destroy
     has_many :comments, dependent: :destroy
