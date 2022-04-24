@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "tingle.js": "^0.16.0",
     "toastify-js": "^1.11.2"
   }
 }
