@@ -1,5 +1,5 @@
-# Instagram_Clone
-Curso de Programação Ruby on Rails.
+# Instagram Clone
+- Curso de Programação Ruby on Rails 6.
 
 ## Criação do projeto, estudos relacionados:
 - Desenvolvimento completo do front-end.
@@ -16,4 +16,4 @@ Curso de Programação Ruby on Rails.
 - Action Cable.
 - Sincronização de comentários.
 
- mentores: Lucas e Mauricio.
+ **mentores: Lucas e Mauricio.**
