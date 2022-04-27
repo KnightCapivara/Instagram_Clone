@@ -9,11 +9,11 @@ consumer.subscriptions.create("PostChannel", {
     // Called when the subscription has been terminated by the server
   },
 
-  received({ post_created }) {
-    const template = document.createElement("template");
+  received({post_created}) {
+    const template = document.createElement("template")
     template.innerHTML = post_created;
 
-    const posts = document.querySelector(".posts");
-    posts.prepend(template.content.firstChild);
+    const post = document.querySelector(".posts");
+    postMessage.prepend(template.content.firstChild);
   }
 });
