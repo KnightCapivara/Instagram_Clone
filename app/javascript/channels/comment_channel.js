@@ -15,8 +15,9 @@ consumer.subscriptions.create("CommentChannel", {
     if (comments.dataset.postId !== post_id) return;
 
     const template = document.createElement("template");
-    tempplate.innerHTML = comment_created;
+    template.innerHTML = comment_created;
 
-    
+    document.querySelector("form.new-comment")
+     .insertAdjacentElement("beforebegin", template.content.firstChild);
   }
 });
