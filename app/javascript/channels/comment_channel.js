@@ -12,7 +12,7 @@ consumer.subscriptions.create("CommentChannel", {
   received({ post_id, comment_created}) {
     const comments = document.querySelector(".comments");
 
-    if (comments.dataset.postId !== post_id) return;
+    if (parseInt(comments.dataset.postId)!== post_id) return;
 
     const template = document.createElement("template");
     template.innerHTML = comment_created;
